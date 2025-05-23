@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*CAMBIO DE COLOR EN PÁGINA DE TOUR POR FALTA DE CONTRASTE*/
+
+.contrastnav ul li:hover {
+  background-color: #c8386dbd;
+}
+
+.contrastnav ul li::after {
+  content: "";
+  height: 60%;
+  width: 0.5px;
+  background-color: #f8e5e5;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.contrastnav ul li a {
+  color: #f8e5e5;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 15px;
+  display: block;
+}
+
+.contrastnav ul ul li {
+  display: block;
+  background-color: #ee6f9e;
+}
+
+.contrastnav div {
+  color: #ffffff;
+  font-size: 24px;
+  padding: 10px;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+/*---------------------------------------------------------*/
+
+nav ul,
+.contrastnav ul {
+  list-style-type: none;
+}
+
+nav ul li,
+.contrastnav ul {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li:hover {
+  background-color: #ffc8dc;
+}
+
+/*  Borde separador de los botones principales  */
+nav ul li::after {
+  content: "";
+  height: 60%;
+  width: 0.5px;
+  background-color: #ff1f70;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+nav ul li a {
+  color: #ff1f70;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 15px;
+  display: block;
+}
+
+nav ul ul,
+.contrastnav ul ul {
+  position: absolute;
+  min-width: 200px;
+  display: none;
+}
+
+nav ul ul li {
+  display: block;
+  background-color: #ffdbe8;
+}
+
+nav ul li:hover ul,
+.contrastnav li:hover ul {
+  display: block;
+}
+
+.fa-caret-down {
+  margin-left: 1rem;
+}
+
+nav div {
+  color: #ff1f70;
+  font-size: 24px;
+  padding: 10px;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Media Query para dispositivos más chicos, celular portrait, landscape */
+@media (max-width: 900px) {
+  /* hace visible el hamburger menú */
+  nav div,
+  .contrastnav div {
+    display: block;
+    font-size: 35px;
+    position: relative;
+  }
+
+  /* Esconde el menú principal */
+
+  .contrastnav ul {
+    display: none;
+    position: absolute;
+    margin-top: 0;
+    background-color: rgb(227, 116, 189);
+    right: 15px;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    margin-top: 0;
+    background-color: rgb(250, 215, 242);
+    right: 15px;
+  }
+
+  /* convierte los li de inline a block para que queden uno arriba del otro */
+  nav ul li,
+  .contrastnav ul li {
+    display: block;
+  }
+
+  /* convierte a los descolgables de absolut a static */
+  nav ul ul,
+  .contrastnav ul li {
+    position: static;
+  }
+}

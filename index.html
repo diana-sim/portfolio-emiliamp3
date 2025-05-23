@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emilia Mernes - Homepage</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Michroma&family=Pixelify+Sans:wght@400..700&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="navstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- LOGO -->
+      <a href="index.html">
+        <img
+          src="img/logotipo_principal.png"
+          alt="Logotipo de Emilia"
+          id="logotipo-principal"
+        />
+      </a>
+
+      <!-- MENU -->
+      <nav>
+        <div>
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+          <li><a href="#">Discografía</a></li>
+          <li><a href="paginas/tour/tour.html">Tour</a></li>
+          <li>
+            <a href="#">Multimedia<i class="fas fa-caret-down"></i></a>
+            <ul>
+              <li>
+                <a href="paginas/videoclips/videoclips.html">Videoclips</a>
+              </li>
+              <li><a href="paginas/galeria/galeria.html">Galería</a></li>
+              <li><a href="paginas/fans/fans.html">Fans</a></li>
+            </ul>
+          </li>
+          <li><a href="paginas/prensa/prensa.html">Prensa</a></li>
+          <li><a href="paginas/contacto/contacto.html">Contacto</a></li>
+          <li><a href="paginas/shop/shop.html">Shop</a></li>
+        </ul>
+      </nav>
+
+      <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"
+      ></script>
+      <script src="menu.js" type="text/javascript"></script>
+    </header>
+
+    <main id="index-main">
+      <!-- Banner -->
+      <section id="index-banner">
+        <h2>MP3 OUT NOW</h2>
+        <a class="botonfucsia" href="paginas/discografia/discografia.html"
+          >STREAM</a
+        >
+      </section>
+
+      <div id="video-tour">
+        <!-- Videos -->
+        <section id="index-videoclip">
+          <img
+            class="lentejuelas"
+            id="lentejuelasizq"
+            src="img/lentejuelas1.png"
+            alt=""
+          />
+          <div>
+            <h2>⋆˙⟡ ÚLTIMO VIDEO ⟡˙⋆</h2>
+          </div>
+          <div id="index-videoclip-container">
+            <video src="img/videoclip.m4v" muted autoplay loop></video>
+            <img
+              class="index-videoclip-cinta"
+              id="index-videoclip-cinta1"
+              src="/img/cinta.png"
+            />
+            <img
+              class="index-videoclip-cinta"
+              id="index-videoclip-cinta2"
+              src="/img/cinta.png"
+            />
+          </div>
+        </section>
+        <img
+          src="img/lentejuelas2.png"
+          class="lentejuelas"
+          id="lentejuelasder"
+          alt=""
+        />
+        <!-- Tour -->
+        <section id="index-tour">
+          <div class="tourtitle">
+            <h2>MP3 TOUR</h2>
+            <h3>PRÓXIMAS FECHAS</h3>
+          </div>
+          <div id="conttourdate">
+            <div class="tourdate">
+              <h3>JUN 22, 2024</h3>
+              <p>A CORUÑA, ESPAÑA</p>
+              <p>Coliseum</p>
+              <a class="botonfucsiaborder" href="paginas/tour/compratour.html"
+                >TICKETS</a
+              >
+            </div>
+            <div class="tourdate">
+              <h3>JUN 28, 2024</h3>
+              <p>MURCIA, ESPAÑA</p>
+              <p>Recinto Ferial La Fica</p>
+              <a class="botonfucsiaborder" href="paginas/tour/compratour.html"
+                >TICKETS</a
+              >
+            </div>
+            <div class="tourdate">
+              <h3>JUN 30, 2024</h3>
+              <p>GRANADA, ESPAÑA</p>
+              <p>Plaza de los toros</p>
+              <a class="botonfucsiaborder" href="paginas/tour/compratour.html">
+                TICKETS</a
+              >
+            </div>
+          </div>
+          <a class="botonfucsia" href="paginas/tour/tour.html">MÁS FECHAS</a>
+        </section>
+      </div>
+      <!-- Store -->
+      <section id="index-store">
+        <h2>OFFICIAL MERCH</h2>
+
+        <div id="contenedorcarouselstore">
+          <ul class="store">
+            <li class="storeitem" id="storeitem1">
+              <img src="img/storeitem1.jpg" alt="" />
+              <h3>REMERA GTA</h3>
+              <p>$20.000</p>
+              <div class="color-checkboxes">
+                <label>
+                  <input type="radio" name="color" value="negro" />
+                  <span class="color-box negro"></span>
+                </label>
+                <label>
+                  <input type="radio" name="color" value="blanco" />
+                  <span class="color-box blanco"></span>
+                </label>
+                <label>
+                  <input type="radio" name="color" value="fucsia" />
+                  <span class="color-box fucsia"></span>
+                </label>
+              </div>
+            </li>
+            <li class="storeitem" id="storeitem2">
+              <img src="img/storeitem2.jpg" alt="" />
+              <h3>REMERA MP3</h3>
+              <p>$20.000</p>
+              <div class="color-checkboxes">
+                <label>
+                  <input type="radio" name="color" value="blanco" />
+                  <span class="color-box blanco"></span>
+                </label>
+                <label>
+                  <input type="radio" name="color" value="fucsia" />
+                  <span class="color-box fucsia"></span>
+                </label>
+              </div>
+            </li>
+            <li class="storeitem" id="storeitem3">
+              <img src="img/storeitem3.jpg" alt="" />
+              <h3>HOODIE JETSET</h3>
+              <p>$30.000</p>
+              <div class="color-checkboxes">
+                <label>
+                  <input type="radio" name="color" value="negro" />
+                  <span class="color-box negro"></span>
+                </label>
+                <label>
+                  <input type="radio" name="color" value="blanco" />
+                  <span class="color-box blanco"></span>
+                </label>
+                <label>
+                  <input type="radio" name="color" value="rosa" />
+                  <span class="color-box rosa"></span>
+                </label>
+              </div>
+            </li>
+            <li class="storeitem" id="storeitem4">
+              <img src="img/storeitem4.jpg" alt="" />
+              <h3>TOTEBAG MP3</h3>
+              <p>$7.000</p>
+              <div class="color-checkboxes">
+                <label>
+                  <input type="radio" name="color" value="negro" />
+                  <span class="color-box negro"></span>
+                </label>
+                <label>
+                  <input type="radio" name="color" value="fucsia" />
+                  <span class="color-box fucsia"></span>
+                </label>
+              </div>
+            </li>
+            <li class="storeitem" id="storeitem5">
+              <img src="img/storeitem5.jpg" alt="" />
+              <h3>ESPEJO MP3</h3>
+              <p>$10.000</p>
+              <div class="color-checkboxes">
+                <label>
+                  <input type="radio" name="color" value="fucsia" />
+                  <span class="color-box fucsia"></span>
+                </label>
+              </div>
+            </li>
+            <li class="storeitem" id="storeitem6">
+              <img src="img/storeitem6.jpg" alt="" />
+              <h3>TOP EXCLUSIVE</h3>
+              <p>$15.000</p>
+              <div class="color-checkboxes">
+                <label>
+                  <input type="radio" name="color" value="negro" />
+                  <span class="color-box negro"></span>
+                </label>
+                <label>
+                  <input type="radio" name="color" value="blanco" />
+                  <span class="color-box blanco"></span>
+                </label>
+                <label>
+                  <input type="radio" name="color" value="rosa" />
+                  <span class="color-box rosa"></span>
+                </label>
+              </div>
+            </li>
+            <li class="storeitem" id="storeitem7">
+              <img src="img/storeitem7.jpg" alt="" />
+              <h3>TOP CUTIE</h3>
+              <p>$15.000</p>
+              <div class="color-checkboxes">
+                <label>
+                  <input type="radio" name="color" value="negro" />
+                  <span class="color-box negro"></span>
+                </label>
+                <label>
+                  <input type="radio" name="color" value="blanco" />
+                  <span class="color-box blanco"></span>
+                </label>
+                <label>
+                  <input type="radio" name="color" value="rosa" />
+                  <span class="color-box rosa"></span>
+                </label>
+              </div>
+            </li>
+            <li class="storeitem" id="storeitem8">
+              <img src="img/storeitem8.jpg" alt="" />
+              <h3>REMERA FACTS</h3>
+              <p>$20.000</p>
+              <div class="color-checkboxes">
+                <label>
+                  <input type="radio" name="color" value="negro" />
+                  <span class="color-box negro"></span>
+                </label>
+                <label>
+                  <input type="radio" name="color" value="blanco" />
+                  <span class="color-box blanco"></span>
+                </label>
+                <label>
+                  <input type="radio" name="color" value="azul" />
+                  <span class="color-box azul"></span>
+                </label>
+              </div>
+            </li>
+            <li class="storeitem" id="storeitem9">
+              <img src="img/storeitem9.jpg" alt="" />
+              <h3>VASO MP3</h3>
+              <p>$1500</p>
+              <div class="color-checkboxes">
+                <label>
+                  <input type="radio" name="color" value="fucsia" />
+                  <span class="color-box fucsia"></span>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contbotoncarousel">
+          <button onclick="myFunction1()" id="boton1"></button>
+          <button onclick="myFunction2()" id="boton2"></button>
+        </div>
+
+        <script>
+          function scrollToItem(itemId) {
+            const container = document.getElementById(
+              "contenedorcarouselstore"
+            );
+            const item = document.getElementById(itemId);
+
+            const scrollPosition = item.offsetLeft - container.offsetLeft;
+
+            container.scrollTo({
+              left: scrollPosition,
+              behavior: "smooth",
+            });
+          }
+
+          function myFunction1() {
+            scrollToItem("storeitem1");
+          }
+
+          function myFunction2() {
+            scrollToItem("storeitem9");
+          }
+        </script>
+
+        <a href="paginas/shop/shop.html" class="botonazul">IR AL SHOP</a>
+      </section>
+
+      <!-- Bio -->
+      <section id="index-bio">
+        <div class="biotexto">
+          <h2>EMILIA <br />MERNES</h2>
+          <br />
+          <p>
+            Emilia no revive los 2000, los reinventa. <br />
+            Con .mp3, redefine el pop femenino desde un lugar auténtico,
+            sirviendo nostalgia con una experiencia musical y visual.
+            <br />
+            Nacida en Nogoyá, Argentina, es una de las voces más frescas y
+            vibrantes del panorama musical latino en el momento.
+          </p>
+          <a class="botonazul" href="paginas/biografia/biografia.html"
+            >VER MÁS</a
+          >
+        </div>
+        <img src="img/emiliabio.jpg" alt="" />
+      </section>
+    </main>
+
+    <footer>
+      <div class="redes">
+        <a href="https://www.youtube.com/channel/UC4osEqmcQL5d1UYJVft-klA">
+          <img src="img/youtube.png" alt="Youtube" />
+        </a>
+        <a
+          href="https://open.spotify.com/intl-es/artist/0AqlFI0tz2DsEoJlKSIiT9"
+        >
+          <img src="img/spotify.png" alt="Spotify" />
+        </a>
+        <a href="https://music.apple.com/es/artist/emilia-mernes/1737282276">
+          <img src="img/applemusic.png" alt="Apple Music" />
+        </a>
+        <a href="https://www.facebook.com/EmiliaMernesMusica/">
+          <img src="img/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.tiktok.com/@emiliamernes?lang=es">
+          <img src="img/tiktok.png" alt="Tiktok" />
+        </a>
+        <a href="https://www.instagram.com/emiliamernes/">
+          <img src="img/instagram.png" alt="Instagram" />
+        </a>
+      </div>
+
+      <p>
+        © 2024 SONY MUSIC ENTERTAINMENT. ALL RIGHTS RESERVED. <br />
+        SEND US FEEDBACK | PRIVACY POLICY | HOW WE USE YOUR DATA | DO NOT SELL
+        MY PERSONAL INFORMATION | YOUR CALIFORNIA PRIVACY RIGHTS | TERMS AND
+        CONDITIONS
+      </p>
+
+      <p>
+        :¨·.·¨: <br />
+        ·.BUILT BY DIDI
+      </p>
+    </footer>
+  </body>
+</html>
