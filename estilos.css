@@ -288,7 +288,7 @@ INDEX
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(/img/tourmobile.png);
+  background-image: url(img/tourmobile.png);
   background-size: cover;
   padding: 8rem 0rem;
 }
@@ -587,7 +587,7 @@ MEDIA QUERIES/ MEDIA / QUERY/RESPONSIVE
   }
   /*---------INDEX TOUR---------*/
   #index-tour {
-    background-image: url(/img/tourfondo.png);
+    background-image: url(img/tourfondo.png);
   }
   #conttourdate {
     border: #003c64;
