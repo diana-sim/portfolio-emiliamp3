@@ -90,18 +90,6 @@ a.botonfucsiaborder:hover {
 
 .botonazul:hover {
   all: unset;
-  background-color: var(--celeste);
-  border-radius: 12px;
-  font-family: "Michroma", sans-serif;
-  font-size: 0.8rem;
-  color: var(--azul);
-  text-align: center;
-  padding: 0.8rem;
-  cursor: pointer;
-}
-
-.botonazul:hover {
-  all: unset;
   background-color: var(--azuloscuro);
   border-radius: 12px;
   font-family: "Michroma", sans-serif;
@@ -331,7 +319,7 @@ INDEX
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 2rem 0 2rem;
+  text-align: center;
   width: 90%;
 }
 
@@ -351,7 +339,7 @@ INDEX
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0 2rem 0;
+  padding: 3rem 0 2rem 0;
   background-color: var(--blanco);
 }
 
@@ -367,9 +355,8 @@ INDEX
   height: 100%;
   max-width: 45rem;
   scrollbar-width: none;
-  margin-bottom: 1rem;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem 0rem 1.5rem 1.9rem;
 }
 
 #index-store .store {
@@ -411,36 +398,8 @@ INDEX
   border-radius: 5px;
 }
 
-#index-store .contbotoncarousel {
-  display: flex;
-  gap: 2rem;
-  visibility: hidden;
-}
-
-#boton1 {
-  all: unset;
-  height: 2rem;
-  width: 2rem;
-  background-image: url(img/prev.png);
-  background-size: contain;
-}
-
-#boton2 {
-  all: unset;
-  height: 2rem;
-  width: 2rem;
-  background-image: url(img/next.png);
-  background-size: contain;
-}
-
-#boton1:hover,
-#boton2:hover {
-  cursor: pointer;
-}
-
 #index-store .botonazul {
   padding: 0.8rem 1.2rem 0.8rem 1.2rem;
-  margin-top: 2rem;
   max-width: 20rem;
 }
 
@@ -489,14 +448,13 @@ INDEX
 }
 
 .color-checkboxes input[type="radio"]:checked + .color-box {
-  outline: 1px solid rgb(178, 178, 178);
+  outline: 2px double rgb(0, 0, 0);
 }
 
 /*-----------------INDEX BIO--------------------*/
 
 #index-bio {
   width: 100%;
-
   display: flex;
   flex-direction: column;
 }
@@ -510,11 +468,13 @@ INDEX
 
 #index-bio div {
   background-color: var(--celeste);
-  padding: 1rem;
+  padding: 2rem 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100%;
+  gap: 1rem;
 }
 
 #index-bio div h2 {
@@ -532,6 +492,10 @@ INDEX
   color: var(--azuloscuro);
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.contbotoncarousel {
+  display: none;
 }
 
 #index-bio .botonazul {
@@ -620,9 +584,31 @@ MEDIA QUERIES/ MEDIA / QUERY/RESPONSIVE
   }
 
   #index-store .contbotoncarousel {
-    visibility: visible;
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
   }
 
+  #boton1 {
+    all: unset;
+    height: 2rem;
+    width: 2rem;
+    background-image: url(img/prev.png);
+    background-size: contain;
+  }
+
+  #boton2 {
+    all: unset;
+    height: 2rem;
+    width: 2rem;
+    background-image: url(img/next.png);
+    background-size: contain;
+  }
+
+  #boton1:hover,
+  #boton2:hover {
+    cursor: pointer;
+  }
   /*----------- INDEX BIO-------*/
 
   #index-bio {
